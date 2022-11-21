@@ -1,0 +1,129 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1fr 1.2fr 1.2fr;
+  text-align: center;
+  grid-gap: 0.2rem;
+  background-color: rgb(0, 123, 255, 0.1);
+}
+
+#content1 {
+  background: rgb(0, 123, 255);
+  border-radius: 10px;
+  color: white;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+#content2 {
+  background: rgb(0, 123, 255);
+  border-radius: 10px;
+  color: white;
+  transition: 1s;
+}
+
+#content3 {
+  background: rgb(0, 123, 255);
+  border-radius: 10px;
+  color: white;
+  transition: 1.5s;
+}
+
+#content4 {
+  background: rgb(0, 123, 255);
+  border-radius: 10px;
+  color: white;
+  transition: 2s;
+}
+
+#content5 {
+  background: rgb(0, 123, 255);
+  border-radius: 10px;
+  color: white;
+  transition: 2.5s;
+}
+
+#content6 {
+  background: rgb(0, 123, 255);
+  border-radius: 10px;
+  color: white;
+  transition: 3s;
+}
+
+img {
+  float: left;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+#name {
+  margin-top: 17px;
+  margin-right: 60px;
+  font-size: 22px;
+  transition: 0.25s;
+  text-align: center;
+  position: center;
+}
+
+button {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+input {
+  border-color: yellow;
+  border-radius: 20px;
+}
+
+button:hover,
+button:focus {
+  background-color: #07c;
+}
+
+button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+button:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr 1.2fr;
+    grid-template-areas:
+      "nav"
+      "content1"
+      "content2"
+      "content3"
+      "content4";
+  }
+}
+
+h1 {
+  font-size: 20px;
+}
